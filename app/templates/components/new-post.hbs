@@ -1,0 +1,23 @@
+{{#if addNewPost}}
+<form>
+  <div>
+    <label for="user">Enter Your Name</label>
+    {{input value=user id="user"}}
+  </div>
+  <div>
+    <label for="title">Enter a Title</label>
+    {{input value=title id="title"}}
+  </div>
+  <div>
+    <label for="content">Enter Your Post</label>
+    {{input value=content id="content"}}
+  </div>
+  <div>
+    <label for="image">Add an Image</label>
+    {{input value=image id="image"}}
+  </div>
+  <button {{action 'savePost'}}>Submit Post</button>
+</form>
+{{else}}
+  <button {{action 'showPostForm'}}>Add a Post</button>
+{{/if}}

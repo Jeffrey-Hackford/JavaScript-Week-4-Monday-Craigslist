@@ -1,0 +1,9 @@
+<h1>{{model.name}}</h1>
+
+{{new-post category=model savePost="savePost"}}
+
+<ul>
+  {{#each model.posts as |post|}}
+    <li>{{post.user}}</li>
+  {{/each}}
+</ul>
