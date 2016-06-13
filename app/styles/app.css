@@ -1,0 +1,15 @@
+.post {
+  border: 2px solid;
+  border-radius: 3em;
+  background-color: lightgray;
+  margin-top: 10px;
+  padding-left: 15px;
+
+}
+img {
+  max-width: 100%;
+}
+
+.center {
+  text-align: center;
+}
