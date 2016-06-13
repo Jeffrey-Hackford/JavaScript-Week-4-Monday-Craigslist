@@ -2,17 +2,4 @@
 <hr><br>
 
 {{new-post category=model savePost="savePost"}}
-
-<ul>
-  {{#each model.posts as |post|}}
-    <div class="row">
-      <div class="post container col-xs-4">
-        <h1 class="center">{{post.title}}</h1>
-        <img src="{{post.image}}">
-        <p class="center">{{category-posts post=post showDetails="showDetails"}}</p>
-      </div>
-    </div>
-    <br>
-    <br>
-  {{/each}}
-</ul>
+{{sorted-posts category=model}}

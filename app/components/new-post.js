@@ -13,8 +13,8 @@ export default Ember.Component.extend({
         title: this.get('title') ? this.get('title') : "",
         content: this.get('content') ? this.get('content') : "",
         image: this.get('image') ? this.get('image') : "",
-        currentTime: moment().format('LTS'),
-        category: this.get('category') ? this.get("category") : ""
+        currentTime: moment().unix(),
+        category: this.get('category')
       };
       this.sendAction('savePost', params);
       this.set("addNewPost", false);
