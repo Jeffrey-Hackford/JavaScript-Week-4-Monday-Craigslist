@@ -1,0 +1,7 @@
+{{#if showing}}
+  <h4>{{post.content}}</h4>
+  <p class="center">Submitted By: {{post.user}}</p>
+  <button class="center" {{action "hideDetails"}}>Hide Details</button>
+{{else}}
+  <button {{action "showDetails"}}>Show Details</button>
+{{/if}}
