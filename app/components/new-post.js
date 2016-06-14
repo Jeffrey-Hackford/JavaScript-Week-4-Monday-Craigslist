@@ -14,6 +14,7 @@ export default Ember.Component.extend({
         content: this.get('content') ? this.get('content') : "",
         image: this.get('image') ? this.get('image') : "",
         currentTime: moment().unix(),
+        displayedTime: moment().format('LLLL'),
         category: this.get('category')
       };
       this.sendAction('savePost', params);

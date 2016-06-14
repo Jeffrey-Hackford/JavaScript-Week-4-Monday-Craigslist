@@ -9,5 +9,6 @@ export default DS.Model.extend({
   content: DS.attr(),
   image: DS.attr(),
   currentTime: DS.attr(),
+  displayedTime: DS.attr(),
   category: DS.belongsTo('category', {async: true})
 });

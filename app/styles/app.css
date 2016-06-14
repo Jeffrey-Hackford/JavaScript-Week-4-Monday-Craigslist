@@ -4,7 +4,6 @@
   background-color: lightgray;
   margin-top: 10px;
   padding-left: 15px;
-
 }
 img {
   max-width: 100%;
@@ -13,4 +12,12 @@ img {
 .center {
   text-align: center;
   margin-top: 4px;
+}
+
+.postForm {
+  border: 2px solid;
+  border-radius: 3em;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }

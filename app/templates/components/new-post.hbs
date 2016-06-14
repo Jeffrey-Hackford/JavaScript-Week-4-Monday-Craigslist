@@ -1,20 +1,20 @@
 {{#if addNewPost}}
-<form>
+<form class="postForm">
   <div>
     <label for="user">Enter Your Name</label>
-    {{input value=user id="user"}}
+    <p>{{input value=user id="user"}}</p>
   </div>
   <div>
     <label for="title">Enter a Title</label>
-    {{input value=title id="title"}}
+    <p>{{input value=title id="title"}}</p>
   </div>
   <div>
     <label for="content">Enter Your Post</label>
-    {{input value=content id="content"}}
+    <p>{{textarea value=content id="content"}}</p>
   </div>
   <div>
     <label for="image">Add an Image</label>
-    {{input value=image id="image"}}
+    <p>{{input value=image id="image"}}</p>
   </div>
   <button {{action 'savePost'}}>Submit Post</button>
 </form>
